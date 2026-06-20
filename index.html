@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>Skyia | skyia.net</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#000000">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+      height: 100%;
+      overflow: hidden;
+      /* Prevent body scroll for fixed app-like layout */
+      font-family: 'Share Tech Mono', monospace;
+      color: #e0e0e0;
+      /* overscroll-behavior: none; Removed to allow inner scroll on iOS */
+    }
+
+
+    .font-display {
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    /* CRT Effect */
+    .scanline {
+      width: 100%;
+      height: 100px;
+      z-index: 50;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(255, 0, 0, 0.02) 50%, rgba(0, 0, 0, 0) 100%);
+      opacity: 0.1;
+      position: absolute;
+      bottom: 100%;
+      animation: scanline 10s linear infinite;
+      pointer-events: none;
+    }
+
+    @keyframes scanline {
+      0% {
+        bottom: 100%;
+      }
+
+      100% {
+        bottom: -100px;
+      }
+    }
+
+    .crt-flicker {
+      animation: flicker 0.15s infinite;
+      pointer-events: none;
+    }
+
+    @keyframes flicker {
+      0% {
+        opacity: 0.98;
+      }
+
+      50% {
+        opacity: 0.95;
+      }
+
+      100% {
+        opacity: 0.98;
+      }
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #111;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #440000;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #770000;
+    }
+
+    /* Cursor Blink */
+    .blink-fast {
+      animation: blink 0.5s step-end infinite;
+    }
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+    }
+
+    /* Intro Fade Out */
+    .intro-fade-out {
+      animation: fadeOutOverlay 1s forwards ease-in-out;
+    }
+
+    @keyframes fadeOutOverlay {
+      0% {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      100% {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+      }
+    }
+
+    /* Game Over Dissolve */
+    .digital-dissolve {
+      animation: dissolve 2.5s forwards ease-in-out;
+      pointer-events: none;
+    }
+
+    @keyframes dissolve {
+      0% {
+        filter: blur(0px) contrast(1);
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      30% {
+        filter: blur(2px) contrast(1.2) hue-rotate(-20deg);
+        transform: scale(1.01);
+      }
+
+      60% {
+        filter: blur(10px) contrast(2) hue-rotate(90deg);
+        opacity: 0.5;
+        transform: scale(0.95) skewX(5deg);
+      }
+
+      100% {
+        filter: blur(30px) contrast(5) grayscale(1);
+        opacity: 0.1;
+        /* Keep slightly visible or let report overlay it */
+        transform: scale(1.1);
+      }
+    }
+
+    /* Background Text Scrolling */
+    .animate-scroll-up {
+      animation: scrollUp 60s linear infinite;
+    }
+
+    .animate-scroll-up-slow {
+      animation: scrollUp 90s linear infinite;
+    }
+
+    @keyframes scrollUp {
+      0% {
+        transform: translateY(0);
+      }
+
+      100% {
+        transform: translateY(-50%);
+      }
+    }
+
+    /* Marketing Optimizations */
+    .cyber-pulse {
+      animation: cyber-pulse-frames 2s infinite;
+    }
+
+    @keyframes cyber-pulse-frames {
+      0% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+        transform: scale(1);
+      }
+
+      70% {
+        box-shadow: 0 0 0 15px rgba(34, 197, 94, 0);
+        transform: scale(1.02);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+        transform: scale(1);
+      }
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>

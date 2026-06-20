@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-06-15T22:37:21.181Z",
+  "status": "NEEDS_REVIEW",
+  "architecture": {
+    "type": "React",
+    "packageManager": "npm",
+    "entrypoints": [
+      "api/index.php",
+      "index.html"
+    ],
+    "criticalDirectories": [
+      "api",
+      "components",
+      "public",
+      "scripts",
+      "services"
+    ],
+    "envFiles": [
+      ".env"
+    ],
+    "buildMode": "npm run build",
+    "publicationMode": "private-or-undecided",
+    "docs": {
+      "readme": true,
+      "fiche": true,
+      "installation": true,
+      "changelog": true,
+      "securityAudit": true,
+      "cleanupAudit": true,
+      "functionalityReport": true,
+      "metadata": true
+    },
+    "scripts": [
+      "bench:models",
+      "build",
+      "dev",
+      "preview",
+      "test"
+    ]
+  },
+  "findings": [
+    {
+      "severity": "warning",
+      "type": "hardcoded-path",
+      "details": "PREPARATION_GITHUB.md"
+    }
+  ]
+}

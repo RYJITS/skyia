@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-06-15T22:37:58.481Z",
+  "mode": "dry-run",
+  "status": "FONCTIONNEL_AVEC_ALERTES",
+  "diagnosis": [
+    {
+      "severity": "warning",
+      "title": "Projet bloque securite",
+      "details": "La reparation ne doit pas publier ni exposer ce projet."
+    }
+  ],
+  "proposedActions": [
+    {
+      "title": "Executer la verification reelle",
+      "command": "npm run verify:functionality -- --project \"D:\\00_Cerveau_IA\\Projet\\05_skyia\" --run"
+    },
+    {
+      "title": "Corriger les blocages securite avant diffusion",
+      "command": "npm run security -- --project \"D:\\00_Cerveau_IA\\Projet\\05_skyia\""
+    }
+  ],
+  "verification": {
+    "generatedAt": "2026-06-15T22:37:25.954Z",
+    "status": "DRY_RUN",
+    "commands": [
+      {
+        "name": "test",
+        "status": "DRY_RUN",
+        "command": "npm run test"
+      },
+      {
+        "name": "build",
+        "status": "DRY_RUN",
+        "command": "npm run build"
+      }
+    ]
+  }
+}

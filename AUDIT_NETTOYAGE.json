@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-06-20T15:15:25.861Z",
+  "dryRun": true,
+  "candidates": [
+    {
+      "path": "dist",
+      "type": "directory",
+      "confidence": "SURE_ARCHIVE",
+      "reason": "dossier genere ou cache detecte"
+    },
+    {
+      "path": "dist_20260605_033806.zip",
+      "type": "file",
+      "confidence": "PROBABLE_ARCHIVE",
+      "reason": "archive locale a verifier avant conservation"
+    },
+    {
+      "path": "dist_20260605_034045.zip",
+      "type": "file",
+      "confidence": "PROBABLE_ARCHIVE",
+      "reason": "archive locale a verifier avant conservation"
+    },
+    {
+      "path": "dist_20260605_034212.zip",
+      "type": "file",
+      "confidence": "PROBABLE_ARCHIVE",
+      "reason": "archive locale a verifier avant conservation"
+    },
+    {
+      "path": "node_modules",
+      "type": "directory",
+      "confidence": "SURE_ARCHIVE",
+      "reason": "dossier genere ou cache detecte"
+    }
+  ]
+}

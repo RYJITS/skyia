@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Utilities if needed */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #e0e0e0;
+}

@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-06-20T15:16:34.279Z",
+  "status": "HAS_RECOMMENDATIONS",
+  "recommendations": [
+    {
+      "priority": "low",
+      "title": "Exclure les dossiers generes des audits et publications",
+      "details": [
+        "dist",
+        "node_modules"
+      ]
+    }
+  ],
+  "summary": {
+    "scannedFiles": 96,
+    "truncated": false
+  }
+}

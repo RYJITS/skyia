@@ -1,0 +1,36 @@
+{
+  "name": "skyia:-judgment-protocol-27.11.2025",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/copy-api-to-dist.cjs",
+    "preview": "vite preview",
+    "test": "vitest",
+    "bench:models": "node scripts/benchmark-models.mjs"
+  },
+  "dependencies": {
+    "html2canvas": "1.4.1",
+    "jspdf": "4.2.1",
+    "lucide-react": "^0.554.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "recharts": "^3.8.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/node": "^22.19.11",
+    "@vitejs/plugin-react": "^5.1.1",
+    "autoprefixer": "^10.4.24",
+    "dotenv": "^17.2.4",
+    "jsdom": "^28.0.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.8.2",
+    "vite": "^7.2.4",
+    "vitest": "^4.0.18"
+  }
+}

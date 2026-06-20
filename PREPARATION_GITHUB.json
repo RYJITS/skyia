@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-06-15T22:37:27.927Z",
+  "mode": "dry-run",
+  "status": "BLOCKED",
+  "blockers": [
+    "security-FAIL_SESSIONS"
+  ],
+  "actions": [
+    "creer .env.example",
+    "revoir changements Git existants avant branche publication"
+  ],
+  "git": {
+    "hasGit": true,
+    "status": "## master | ?? .project-orchestrator.json | ?? AUDIT_ARCHITECTURE.json | ?? AUDIT_ARCHITECTURE.md | ?? AUDIT_NETTOYAGE.json | ?? AUDIT_NETTOYAGE.md | ?? AUDIT_OPTIMISATION.json | ?? AUDIT_OPTIMISATION.md | ?? AUDIT_SECURITE.json | ?? AUDIT_SECURITE.md | ?? CHANGELOG_FR.md | ?? FICHE_PROJET.md | ?? INSTALLATION_FR.md | ?? PREPARATION_GITHUB.json | ?? PREPARATION_GITHUB.md | ?? RAPPORT_FONCTIONNALITE.json | ?? RAPPORT_FONCTIONNALITE.md | ?? RAPPORT_REPARATION_FONCTIONNALITE.json | ?? RAPPORT_REPARATION_FONCTIONNALITE.md",
+    "dirty": true,
+    "lines": [
+      "## master",
+      "?? .project-orchestrator.json",
+      "?? AUDIT_ARCHITECTURE.json",
+      "?? AUDIT_ARCHITECTURE.md",
+      "?? AUDIT_NETTOYAGE.json",
+      "?? AUDIT_NETTOYAGE.md",
+      "?? AUDIT_OPTIMISATION.json",
+      "?? AUDIT_OPTIMISATION.md",
+      "?? AUDIT_SECURITE.json",
+      "?? AUDIT_SECURITE.md",
+      "?? CHANGELOG_FR.md",
+      "?? FICHE_PROJET.md",
+      "?? INSTALLATION_FR.md",
+      "?? PREPARATION_GITHUB.json",
+      "?? PREPARATION_GITHUB.md",
+      "?? RAPPORT_FONCTIONNALITE.json",
+      "?? RAPPORT_FONCTIONNALITE.md",
+      "?? RAPPORT_REPARATION_FONCTIONNALITE.json",
+      "?? RAPPORT_REPARATION_FONCTIONNALITE.md"
+    ]
+  }
+}

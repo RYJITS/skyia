@@ -1,0 +1,9 @@
+Options -Indexes
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
+
+<FilesMatch "(\.env|env\.Local|config\.php|config\.local\.php|schema\.sql)$">
+  Require all denied
+</FilesMatch>
