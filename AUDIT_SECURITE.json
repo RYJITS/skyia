@@ -1,51 +1,5 @@
 {
-  "generatedAt": "2026-06-20T21:37:46.199Z",
-  "status": "FAIL_SESSIONS",
-  "findings": [
-    {
-      "severity": "blocker",
-      "type": "blocked-file",
-      "path": ".env"
-    },
-    {
-      "severity": "blocker",
-      "type": "generic-secret",
-      "path": "api/index.php"
-    },
-    {
-      "severity": "blocker",
-      "type": "session-or-auth-path",
-      "path": "api/lib/auth.php"
-    },
-    {
-      "severity": "blocker",
-      "type": "generic-secret",
-      "path": "api/lib/auth.php"
-    },
-    {
-      "severity": "blocker",
-      "type": "generic-secret",
-      "path": "api/lib/config.php"
-    },
-    {
-      "severity": "blocker",
-      "type": "session-or-auth-path",
-      "path": "components/AuthModal.tsx"
-    },
-    {
-      "severity": "blocker",
-      "type": "session-or-auth-path",
-      "path": "services/AuthContext.tsx"
-    },
-    {
-      "severity": "blocker",
-      "type": "generic-secret",
-      "path": "services/AuthContext.tsx"
-    },
-    {
-      "severity": "blocker",
-      "type": "generic-secret",
-      "path": "services/userKeysService.ts"
-    }
-  ]
+  "generatedAt": "2026-06-20T22:49:31.843Z",
+  "status": "OK_PUBLIC",
+  "findings": []
 }
