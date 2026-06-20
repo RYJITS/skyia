@@ -16,6 +16,13 @@ dist-ssr
 *.local
 dist_*.zip
 api/config.local.php
+session
+sessions
+baileys-auth
+*.pem
+*.key
+*.p12
+*.pfx
 
 # Editor directories and files
 .vscode/*
