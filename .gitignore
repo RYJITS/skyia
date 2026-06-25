@@ -34,3 +34,42 @@ baileys-auth
 *.njsproj
 *.sln
 *.sw?
+
+# Orchestrateur - publication GitHub publique
+.env*
+.env.local
+.whatsapp-web-profile
+.whatsapp-web-chrome-profile
+
+# Orchestrateur - publication GitHub publique
+!.env.example
+
+# Orchestrateur - publication GitHub publique
+.project-orchestrator.json
+metadata.json
+AUDIT_*.json
+AUDIT_*.md
+RAPPORT_*.json
+RAPPORT_*.md
+PREPARATION_GITHUB*.json
+PREPARATION_GITHUB*.md
+docs/captures/
+captures/
+
+# Orchestrateur - publication GitHub publique
+build/
+out/
+.next/
+.nuxt/
+.cache/
+.playwright-cli/
+coverage/
+backups/
+backup/
+archives/
+_archive/
+_deploy/
+output/
+99_Archive/
+runtime/jobs/
+runtime/outputs/

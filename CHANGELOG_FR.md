@@ -1,8 +1,8 @@
 # Changelog - skyia
 
-## 2026-06-20
+## 2026-06-21
 
 - Documentation projet synchronisee par l'orchestrateur global.
-- Statut courant: SENSITIVE_BLOCKED.
-- Securite: FAIL_SESSIONS.
+- Statut courant: PUBLIC_CANDIDATE.
+- Securite: OK_PUBLIC.
 - Fonctionnement: FONCTIONNEL_AVEC_ALERTES.

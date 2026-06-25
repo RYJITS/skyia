@@ -1,12 +1,16 @@
 # SkyIA
 
-## Explication de l'application
+## Liens vers l'application
+- Lien public: https://skyia.net
+- GitHub: non detecte
+
+## A quoi sert le projet
 SkyIA est l'application principale de jugement IA adversarial. Elle met en face un humain ou une IA defensive avec un juge hostile, compare les modeles, archive les duels et transforme les resultats en observatoire de performance.
 
-## Fonctionnement de l'application
+## Fonctionnement de l'application ou du projet
 Le frontend React pilote les conversations, les modeles, les sessions et les rapports. L'API PHP gere l'authentification, les modeles, le chat stream, les sauvegardes, les statistiques, les rapports de duel, les latences, les cles utilisateur et les modeles personnalises. Les services front choisissent le fournisseur, compactent le contexte quand le modele a peu de tokens, streament les reponses et extraient les metriques utiles.
 
-## Comment l'application a ete concue
+## Comment le projet a ete construit
 SkyIA a ete concu en deux couches: une interface de jeu/benchmark pour l'utilisateur et une API serveur qui conserve les donnees importantes. Le projet separe les modeles gratuits serveur, les modeles BYOK, les statistiques, les rapports publics et les donnees sensibles pour pouvoir evoluer vers une publication plus propre.
 
 ## Fonctions disponibles dans l'application
@@ -45,29 +49,16 @@ SkyIA a ete concu en deux couches: une interface de jeu/benchmark pour l'utilisa
 - Tests endpoints, modeles, stockage et exports
 
 ## Captures d'ecran
-- Aucune capture validee pour cette fiche.
+![Capture 1 - skyia](docs/captures/05-skyia-2026-06-21_23-37-02-desktop.png)
 
-## Liens utiles
-- Chemin local: `D:\00_Cerveau_IA\Projet\05_skyia`
-- Hostinger: lien detecte mais masque par securite orchestrateur
-- GitHub: non detecte
+![Capture 2 - skyia](docs/captures/05-skyia-2026-06-21_23-37-02-mobile.png)
 
-## Resume court
-Application principale de jugement IA adversarial. Elle compare des modeles, orchestre des duels, archive les rapports et suit les performances.
-
-## Pour qui
-Projet IA principal, demonstration, experimentation et observatoire de modeles.
-
-## Statut actuel
-Le projet est reference dans le hub avec le statut **SENSITIVE_BLOCKED**.
-La securite est indiquee separement pour eviter de confondre un lien public existant avec une autorisation de publication.
-
-## Suivi orchestrateur
-- Securite: FAIL_SESSIONS
-- Fonctionnement: FONCTIONNEL_AVEC_ALERTES
-- Publication: SENSITIVE_BLOCKED
+## Mises a jour
+- Fiche actualisee depuis le registre orchestrateur et le catalogue projet.
+- Changements locaux detectes: relire la fiche apres validation des modifications.
+- Derniere mise a jour registre connue: 2026-06-21T21:46:01.807Z.
 
 ## Derniere mise a jour
-2026-06-20T18:19:00.198Z
+2026-06-21T21:46:01.809Z
 
 > Fichier genere par l'orchestrateur pour le hub Site Ma Methode.
