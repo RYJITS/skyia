@@ -2,7 +2,7 @@
 
 ## Liens vers l'application
 - Lien public: https://skyia.net
-- GitHub: non detecte
+- GitHub: https://github.com/RYJITS/skyia
 
 ## A quoi sert le projet
 SkyIA est l'application principale de jugement IA adversarial. Elle met en face un humain ou une IA defensive avec un juge hostile, compare les modeles, archive les duels et transforme les resultats en observatoire de performance.
@@ -55,10 +55,5 @@ SkyIA a ete concu en deux couches: une interface de jeu/benchmark pour l'utilisa
 
 ## Mises a jour
 - Fiche actualisee depuis le registre orchestrateur et le catalogue projet.
-- Changements locaux detectes: relire la fiche apres validation des modifications.
-- Derniere mise a jour registre connue: 2026-06-21T21:46:01.807Z.
-
-## Derniere mise a jour
-2026-06-21T21:46:01.809Z
 
 > Fichier genere par l'orchestrateur pour le hub Site Ma Methode.

@@ -35,9 +35,9 @@ Le frontend React pilote les conversations, les modeles, les sessions et les rap
 
 ## Actualisations et evolution
 
-- Statut courant: PUBLIC_CANDIDATE.
+- Statut courant: PUBLIC_READY.
 - Securite: OK_PUBLIC.
-- Fonctionnement: FONCTIONNEL_AVEC_ALERTES.
+- Fonctionnement: FONCTIONNEL.
 
 ## Options et conception
 
@@ -152,9 +152,9 @@ npm run build
 
 ## Captures d'ecran
 
-![Capture desktop](docs/github-captures/05-skyia-2026-06-28_00-27-07-desktop.png)
+![Capture desktop](docs/github-captures/05-skyia-2026-06-28_00-32-02-desktop.png)
 
-![Capture mobile](docs/github-captures/05-skyia-2026-06-28_00-27-07-mobile.png)
+![Capture mobile](docs/github-captures/05-skyia-2026-06-28_00-32-02-mobile.png)
 
 ## Variables d'environnement
 
