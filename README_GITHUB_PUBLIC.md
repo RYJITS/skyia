@@ -152,9 +152,9 @@ npm run build
 
 ## Captures d'ecran
 
-![Capture desktop](docs/github-captures/05-skyia-2026-06-28_00-32-02-desktop.png)
+![Capture desktop](docs/github-captures/05-skyia-2026-06-28_00-33-39-desktop.png)
 
-![Capture mobile](docs/github-captures/05-skyia-2026-06-28_00-32-02-mobile.png)
+![Capture mobile](docs/github-captures/05-skyia-2026-06-28_00-33-39-mobile.png)
 
 ## Variables d'environnement
 
