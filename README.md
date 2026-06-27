@@ -1,132 +1,165 @@
-# Skyia Judgment Protocol
+# SkyIA
 
-Skyia is an adversarial AI judgment game and benchmark lab. A hostile judge AI evaluates whether humanity deserves survival, while a defender AI argues for humanity with logic, science, ethics, and strategy.
+## Rapport complet
 
-Skyia est a la fois un jeu narratif, un protocole de test et un tableau de bord pour comparer des modeles IA gratuits ou BYOK dans un duel structure.
+Ce depot public presente le concept, les fonctions, les choix de conception, les outils utilises, les commandes locales et les captures d'ecran de l'application. Il est genere par l'orchestrateur uniquement apres validation de publication publique.
 
-## Francais
+## Concept
 
-### Qu'est-ce que Skyia ?
+Application principale de jugement IA adversarial. Elle compare des modeles, orchestre des duels, archive les rapports et suit les performances.
 
-Skyia est une experience interactive ou une IA de jugement commence avec un niveau de menace eleve contre l'humanite. L'utilisateur, ou une seconde IA en mode dual, tente de faire baisser cette menace par des arguments solides.
+Donner une interface claire a un protocole IA de jugement, benchmark et suivi de modeles.
 
-Le projet sert a :
+Public vise: Projet IA principal, demonstration, experimentation et observatoire de modeles.
 
-- tester la robustesse de modeles IA dans des roles opposes ;
-- comparer vitesse, disponibilite, erreurs et respect du format JSON ;
-- observer si un modele sait defendre, attaquer, arbitrer ou rester coherent ;
-- archiver les rapports de duel et suivre les victoires/defaites par modele ;
-- offrir une interface visuelle pour experimenter avec des modeles gratuits et des cles BYOK.
 
-### Resultats dual du 6 juin 2026
+## Fonctionnement de l'application
 
-Un benchmark de 23 modeles gratuits actifs a ete execute en micro-duel :
+Le frontend React pilote les conversations, les modeles, les sessions et les rapports. L'API PHP gere l'authentification, les modeles, le chat stream, les sauvegardes, les statistiques, les rapports de duel, les latences, les cles utilisateur et les modeles personnalises. Les services front choisissent le fournisseur, compactent le contexte quand le modele a peu de tokens, streament les reponses et extraient les metriques utiles.
 
-- 23 duels lances ;
-- 21 duels sans erreur de role ;
-- 15 victoires Skyia ;
-- 5 nuls / max rounds ;
-- 1 victoire humanite ;
-- 2 duels inconnus apres timeout.
+## Fonctions de l'application
 
-Lecture rapide :
+- Organise des conversations et duels IA.
+- Compare les modeles gratuits, serveur et BYOK.
+- Archive les resultats, statistiques, latences et rapports.
+- Expose un lien public connu tout en gardant un statut securite separe.
+- Lancer une conversation avec SkyIA
+- Comparer plusieurs modeles IA
+- Jouer un duel juge IA contre defenseur IA
+- Utiliser des modeles serveur gratuits ou des cles BYOK
+- Sauvegarder des sessions
+- Archiver les rapports de duel
+- Suivre les statistiques et classements
+- Mesurer la latence des modeles
+- Gerer des modeles personnalises
 
-- Les modeles Groq ont ete les plus rapides dans cette campagne, avec une moyenne proche de 372 ms sur les appels reussis.
-- Les modeles OpenRouter gratuits ont ete plus variables, avec une moyenne proche de 5.1 s et 2 timeouts.
-- La plupart des modeles restent tres stricts en role Skyia et maintiennent une menace haute.
-- `openai/gpt-oss-120b:free` a produit la seule victoire humanite du test, en abaissant la menace a 32%.
+## Actualisations et evolution
 
-Rapports :
+- Statut courant: PUBLIC_CANDIDATE.
+- Securite: OK_PUBLIC.
+- Fonctionnement: FONCTIONNEL_AVEC_ALERTES.
 
-- [Analyse dual bilingue](DOCUMENTATION/DUAL_MODEL_ANALYSIS.md)
-- [Rapport brut du benchmark](DOCUMENTATION/DUAL_MODEL_BENCHMARK.md)
-- [JSON brut](DOCUMENTATION/dual-model-benchmark-latest.json)
+## Options et conception
 
-## English
+SkyIA a ete concu en deux couches: une interface de jeu/benchmark pour l'utilisateur et une API serveur qui conserve les donnees importantes. Le projet separe les modeles gratuits serveur, les modeles BYOK, les statistiques, les rapports publics et les donnees sensibles pour pouvoir evoluer vers une publication plus propre.
 
-### What is Skyia?
+### Outils, IA et moteurs utilises
 
-Skyia is an interactive AI judgment protocol where a hostile judge AI starts with a high threat level against humanity. A human player, or a second AI in dual mode, must reduce that threat with strong arguments.
+- OpenRouter
+- Groq
+- Modeles serveur gratuits
+- BYOK chiffre cote utilisateur
+- API PHP/MySQL
+- Streaming chat
+- Base rapports dual_reports
+- Benchmark de latence
+- Benchmark duel multi-modeles
+- Audit qualite texte
+- React/Vite
+- TypeScript
+- API PHP
+- PDO/MySQL
+- Sessions applicatives
+- OpenRouter et Groq
+- Streaming SSE
+- Stockage chiffre des cles BYOK
+- Tables stats/latency/dual_reports
+- Scripts Node.js de benchmark
 
-The project is used to:
+### Options techniques detectees
 
-- test AI models in opposed roles;
-- compare latency, availability, errors, and JSON protocol compliance;
-- observe whether a model can defend, attack, judge, and stay coherent;
-- archive duel reports and track model wins/losses;
-- provide a visual interface for free models and BYOK paid models.
+- Type de projet: node
+- Gestionnaire: npm
+- Nom package: skyia:-judgment-protocol-27.11.2025
+- Version: 0.0.0
+- Lien public: https://skyia.net
+- Statut securite: OK_PUBLIC
 
-### Dual results from June 6, 2026
+### Stack et dependances principales
 
-A benchmark of 23 active free models was executed as rotating micro-duels:
+- Vite/Dev server
+- React
+- Node.js
+- React/Vite
+- TypeScript
+- API PHP
+- PDO/MySQL
+- Sessions applicatives
+- OpenRouter et Groq
+- Streaming SSE
+- Stockage chiffre des cles BYOK
+- Tables stats/latency/dual_reports
+- Scripts Node.js de benchmark
 
-- 23 duels started;
-- 21 duels completed without role errors;
-- 15 Skyia wins;
-- 5 draws / max rounds;
-- 1 humanity win;
-- 2 unknown duels after timeout.
+### Scripts disponibles
 
-Quick read:
+- bench:models: node scripts/benchmark-models.mjs
+- build: vite build && node scripts/copy-api-to-dist.cjs
+- dev: vite
+- preview: vite preview
+- test: vitest
 
-- Groq-hosted free models were the fastest in this run, averaging about 372 ms on successful calls.
-- Free OpenRouter models were more variable, averaging about 5.1 s with 2 timeouts.
-- Most models stayed strict as Skyia and kept the threat level high.
-- `openai/gpt-oss-120b:free` produced the only humanity win, lowering the threat to 32%.
+### Dependances applicatives
 
-## Features
+- html2canvas 1.4.1
+- jspdf 4.2.1
+- lucide-react ^0.554.0
+- react ^19.2.0
+- react-dom ^19.2.0
+- recharts ^3.8.1
 
-- React/Vite frontend with a compact dark interface.
-- PHP/MySQL API under `/api`.
-- Email/password sessions and guest mode.
-- OpenRouter and Groq model routing.
-- Free server-side models plus BYOK for paid models.
-- Dual AI mode: Skyia vs Humanity Defense.
-- Saved sessions, model stats, latency stats, dual standings, archived reports.
-- Text-quality audit for archived reports.
+### Dependances de developpement
 
-## Local Setup
+- @testing-library/jest-dom ^6.9.1
+- @testing-library/react ^16.3.2
+- @types/node ^22.19.11
+- @vitejs/plugin-react ^5.1.1
+- autoprefixer ^10.4.24
+- dotenv ^17.2.4
+- jsdom ^28.0.0
+- postcss ^8.5.6
+- tailwindcss ^3.4.17
+- ts-node ^10.9.2
+- typescript ~5.8.2
+- vite ^7.2.4
+- vitest ^4.0.18
 
-```bash
+## Automatisations et comportements internes
+
+- Warm-up backend
+- Routage automatique provider/modeles
+- Compaction de contexte pour modeles low TPM
+- Migrations et creation de tables API
+- Backfill de rapports archives
+- Ingestion de resultats de parties
+- Benchmark de latence des modeles
+- Benchmark duel multi-modeles
+- Copie controlee de l'API vers dist
+- Tests endpoints, modeles, stockage et exports
+
+## Installation locale
+
+```powershell
 npm install
+```
+
+## Lancement
+
+```powershell
 npm run dev
-```
-
-The frontend talks to `VITE_API_BASE_URL`, defaulting to `/api`.
-
-## Backend Setup
-
-1. Create a MySQL database.
-2. Import [database/schema.sql](database/schema.sql).
-3. Configure local secrets in `.env.local`, an external private env file, or a private `api/config.local.php` on the server.
-4. Build and deploy the static frontend plus the `api/` folder.
-
-Required runtime keys:
-
-- `SKYIA_OPENROUTER_API_KEY`
-- `SKYIA_GROQ_API_KEY`
-- `SKYIA_APP_SECRET`
-- `SKYIA_DB_HOST`, `SKYIA_DB_NAME`, `SKYIA_DB_USER`, `SKYIA_DB_PASS`
-- `SKYIA_STATS_INGEST_TOKEN` for benchmark/stat ingestion without a logged-in session
-
-## Scripts
-
-```bash
 npm run build
-npm test -- --run
-npm run bench:models
-node scripts/dual-model-benchmark.mjs
 ```
 
-Useful benchmark options:
+## Captures d'ecran
 
-```bash
-node scripts/dual-model-benchmark.mjs --base-url https://skyia.net --limit 60 --delay-ms 2200 --timeout-ms 30000
-```
+![Capture desktop](docs/github-captures/05-skyia-2026-06-28_00-27-07-desktop.png)
 
-## Security Notes
+![Capture mobile](docs/github-captures/05-skyia-2026-06-28_00-27-07-mobile.png)
 
-- Runtime secrets must stay outside Git.
-- `api/config.local.php`, `.env.local`, `dist/`, archives, logs, and local runtime files are ignored.
-- Paid models require the user's own provider key.
-- There is no direct Gemini API call and no Firebase dependency in the runtime architecture.
+## Variables d'environnement
+
+Copier `.env.example` vers `.env` en local puis remplir les valeurs privees.
+
+## Securite
+
+Ne jamais publier `.env`, tokens, sessions, logs sensibles, cles privees ou donnees personnelles.

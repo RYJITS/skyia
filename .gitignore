@@ -73,3 +73,10 @@ output/
 99_Archive/
 runtime/jobs/
 runtime/outputs/
+
+# Orchestrateur - publication GitHub publique
+public/generated/videos/
+docs/daily-tests/evidence/
+*.7z
+*.rar
+*.bak
