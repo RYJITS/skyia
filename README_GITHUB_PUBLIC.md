@@ -1,8 +1,52 @@
 # SkyIA - Protocole de Jugement Adversarial pour Modèles IA
 
-## Rapport complet
+## Presentation
 
-Ce depot public presente le concept, les fonctions, les choix de conception, les outils utilises, les commandes locales et les captures d'ecran de l'application. Il est genere par l'orchestrateur uniquement apres validation de publication publique.
+SkyIA - Protocole de Jugement Adversarial pour Modèles IA est presente ici avec son concept, ses fonctions, ses choix de conception et ses informations d'utilisation.
+
+## Demarrage rapide
+
+### Pre-requis
+
+- Git installe localement.
+- Node.js 20 ou plus recent.
+- Gestionnaire de paquets: npm.
+
+### Installer et lancer
+
+```powershell
+git clone https://github.com/RYJITS/skyia.git
+cd skyia
+npm install
+npm test
+npm run dev
+```
+
+## Installation locale
+
+### Pre-requis
+- Node.js installe localement.
+- Gestionnaire detecte: npm.
+- Creer un fichier `.env` local a partir de `.env.example` si des variables sont necessaires.
+
+### Commandes
+```powershell
+git clone https://github.com/RYJITS/skyia.git
+cd skyia
+npm install
+npm test
+```
+
+## Lancement
+
+```powershell
+npm run dev
+npm run build
+```
+
+## Utilisation
+
+Après installation, l'utilisateur accède à l'interface via un navigateur web. Il peut lancer une conversation avec un ou plusieurs modèles, organiser des duels adversariaux, sauvegarder ses sessions, et consulter des rapports détaillés. Les fonctionnalités incluent la sélection de modèles (gratuits, serveurs ou BYOK), la visualisation des statistiques en temps réel, et l'export des rapports au format PDF. L'interface propose également un mode immersif avec des effets visuels rétro pour une expérience utilisateur unique.
 
 ## Concept
 
@@ -27,18 +71,6 @@ L'application fonctionne en deux couches principales : un frontend React/Vite g�
 - Sauvegarde et restauration de sessions
 - Suivi des statistiques et classements
 - Interface immersive en style terminal rétro
-- Lancement de duels IA en temps réel
-- Comparaison multi-modèles avec streaming des réponses
-- Archivage et export de rapports de duel (PDF)
-- Benchmark de latence et qualité des réponses
-- Gestion des modèles personnalisés (BYOK) avec stockage chiffré
-- Sauvegarde et restauration de sessions locales ou cloud
-- Interface responsive adaptée aux mobiles et desktop
-- Effets visuels immersifs (style terminal rétro)
-- Gestion des utilisateurs et des crédits (via Firebase Auth et Stripe)
-- Suivi des performances et classements
-- Compaction automatique du contexte pour les modèles à faible TPM
-- Gestion des erreurs et fallback pour les modèles indisponibles
 
 ## Actualisations et evolution
 
@@ -52,17 +84,12 @@ L'application fonctionne en deux couches principales : un frontend React/Vite g�
 - Amélioration de la gestion des modèles BYOK avec stockage chiffré
 - Ajout de la compaction de contexte pour les modèles à faible capacité token
 - Mise à jour des dépendances (React v19, Vite v7, Vitest v4)
-- Statut courant: PUBLIC_READY.
-- Securite: OK_PUBLIC.
-- Fonctionnement: FONCTIONNEL.
 - Validation des scripts de test et build (npm run test, npm run build)
 - Séparation renforcée des données sensibles et publiques pour évolutivité
 
 ## Comment le projet a ete reflechi et construit
 
 Le projet a été conçu avec une architecture modulaire et sécurisée, séparant clairement les responsabilités entre frontend et backend. Le frontend utilise React avec TypeScript pour un typage strict et une maintenabilité accrue, tandis que le backend repose sur une API PHP/MySQL pour une compatibilité avec les hébergements mutualisés. La sécurité est renforcée par un stockage chiffré des clés BYOK côté utilisateur et une séparation des données sensibles (tokens, sessions) des données publiques (rapports, statistiques). L'interface utilisateur a été pensée pour être intuitive tout en intégrant des éléments visuels inspirés des interfaces rétro (style terminal, effets CRT) pour une expérience immersive. L'architecture a été optimisée pour une évolutivité et une maintenabilité à long terme, avec des tests automatisés et des audits de sécurité intégrés.
-
-Cette section doit expliquer les choix qui ont guide le projet: besoin de depart, structure retenue, modules principaux, compromis techniques, interface ou logique metier, et raisons des outils utilises.
 
 ### Outils, IA et moteurs utilises
 
@@ -94,7 +121,6 @@ Cette section doit expliquer les choix qui ont guide le projet: besoin de depart
 - Nom package: skyia:-judgment-protocol-27.11.2025
 - Version: 0.0.0
 - Lien public: https://skyia.net
-- Statut securite: OK_PUBLIC
 
 ### Stack et dependances principales
 
@@ -155,45 +181,11 @@ Cette section doit expliquer les choix qui ont guide le projet: besoin de depart
 - Tests automatisés des endpoints et fonctionnalités critiques
 - Génération automatique des rapports PDF après un duel
 
-## Installation locale
-
-[object Object]
-
-### Pre-requis
-- Node.js installe localement.
-- Gestionnaire detecte: npm.
-- Creer un fichier `.env` local a partir de `.env.example` si des variables sont necessaires.
-
-### Commandes
-```powershell
-npm install
-npm run build
-npm run dev
-```
-
-### Scripts utiles
-- bench:models: node scripts/benchmark-models.mjs
-- build: vite build && node scripts/copy-api-to-dist.cjs
-- dev: vite
-- preview: vite preview
-- test: vitest
-
-## Lancement
-
-```powershell
-npm run dev
-npm run build
-```
-
-## Utilisation
-
-Après installation, l'utilisateur accède à l'interface via un navigateur web. Il peut lancer une conversation avec un ou plusieurs modèles, organiser des duels adversariaux, sauvegarder ses sessions, et consulter des rapports détaillés. Les fonctionnalités incluent la sélection de modèles (gratuits, serveurs ou BYOK), la visualisation des statistiques en temps réel, et l'export des rapports au format PDF. L'interface propose également un mode immersif avec des effets visuels rétro pour une expérience utilisateur unique.
-
 ## Captures d'ecran
 
-![Capture desktop](docs/github-captures/05-skyia-2026-06-28_03-37-46-desktop.png)
+![Capture desktop](docs/github-captures/05-skyia-2026-08-07_23-11-08-desktop.png)
 
-![Capture mobile](docs/github-captures/05-skyia-2026-06-28_03-37-46-mobile.png)
+![Capture mobile](docs/github-captures/05-skyia-2026-08-07_23-11-08-mobile.png)
 
 ## Variables d'environnement
 

@@ -1,9 +1,11 @@
 # Installation - skyia
 
-Chemin: `D:\00_Cerveau_IA\Projet\05_skyia`
+```powershell
+git clone https://github.com/RYJITS/skyia.git
+cd skyia
+```
 
 ```powershell
-cd "D:\00_Cerveau_IA\Projet\05_skyia"
 npm install
 npm run dev
 ```
