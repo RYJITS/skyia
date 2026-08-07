@@ -74,7 +74,6 @@ L'application fonctionne en deux couches principales : un frontend React/Vite g�
 
 ## Actualisations et evolution
 
-- Statut public : PUBLIC_READY avec sécurité OK_PUBLIC
 - Validation des scripts de build et test (vitest, vite)
 - Séparation des données sensibles et publiques pour évolutivité
 - Ajout de la gestion des modèles BYOK avec stockage chiffré côté utilisateur

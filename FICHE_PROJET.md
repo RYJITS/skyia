@@ -68,7 +68,6 @@ Après installation, l'utilisateur accède à l'interface via un navigateur web.
 - Mise à jour des dépendances (React v19, Vite v7, Vitest v4)
 - Validation des scripts de test et build (npm run test, npm run build)
 - Séparation renforcée des données sensibles et publiques pour évolutivité
-- Statut public : PUBLIC_READY avec sécurité OK_PUBLIC
 - Validation des scripts de build et test (vitest, vite)
 - Séparation des données sensibles et publiques pour évolutivité
 - Ajout de la gestion des modèles BYOK avec stockage chiffré côté utilisateur
